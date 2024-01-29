@@ -98,3 +98,10 @@ import Demo13 from './demo13';
 
 export default () => <Demo13 />
 ```
+
+## 纹理
+```jsx
+import Demo14 from './demo14';
+
+export default () => <Demo14 />
+```
