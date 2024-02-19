@@ -105,3 +105,18 @@ import Demo14 from './demo14';
 
 export default () => <Demo14 />
 ```
+
+## 打印向量
+```jsx
+import Demo15 from './demo15';
+
+export default () => <Demo15 />
+```
+
+## 4个方块
+```jsx
+import Demo16 from './demo16';
+
+export default () => <Demo16 />
+```
+
