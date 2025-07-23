@@ -6,117 +6,140 @@ group: example
 order: 0
 ---
 
-#   webgl所有例子
+# webgl 所有例子
 
-##  初步绘制webgl
+## 初步绘制 webgl
+
 ```jsx
-import  Demo01  from './demo01';
+import Demo01 from './demo01';
 
-export default () => <Demo01  />
+export default () => <Demo01 />;
 ```
 
-##  绘制一个点
-```jsx
-import  Demo02  from './demo02';
+## 绘制一个点
 
-export default () => <Demo02  />
+```jsx
+import Demo02 from './demo02';
+
+export default () => <Demo02 />;
 ```
 
-##  js向attribute 变量传参的步骤
-```jsx
-import  Demo03  from './demo03';
+## js 向 attribute 变量传参的步骤
 
-export default () => <Demo03  />
+```jsx
+import Demo03 from './demo03';
+
+export default () => <Demo03 />;
 ```
 
-##  鼠标绘制点位
-```jsx
-import  Demo04  from './demo04';
+## 鼠标绘制点位
 
-export default () => <Demo04  />
+```jsx
+import Demo04 from './demo04';
+
+export default () => <Demo04 />;
 ```
 
-##  改变颜色
-```jsx
-import  Demo05  from './demo05';
+## 改变颜色
 
-export default () => <Demo05  />
+```jsx
+import Demo05 from './demo05';
+
+export default () => <Demo05 />;
 ```
 
-##  绘制圆点
-```jsx
-import  Demo06  from './demo06';
+## 绘制圆点
 
-export default () => <Demo06  />
+```jsx
+import Demo06 from './demo06';
+
+export default () => <Demo06 />;
 ```
 
-##  绘制多个点
-```jsx
-import  Demo07  from './demo07';
+## 绘制多个点
 
-export default () => <Demo07  />
+```jsx
+import Demo07 from './demo07';
+
+export default () => <Demo07 />;
 ```
 
-##  绘制矩形
-```jsx
-import  Demo08  from './demo08';
+## 绘制矩形
 
-export default () => <Demo08  />
+```jsx
+import Demo08 from './demo08';
+
+export default () => <Demo08 />;
 ```
 
-##  独立两个三角形
-```jsx
-import  Demo09  from './demo09';
+## 独立两个三角形
 
-export default () => <Demo09  />
+```jsx
+import Demo09 from './demo09';
+
+export default () => <Demo09 />;
 ```
 
-##  异步绘制多点
-```jsx
-import  Demo10  from './demo10';
+## 异步绘制多点
 
-export default () => <Demo10  />
+```jsx
+import Demo10 from './demo10';
+
+export default () => <Demo10 />;
 ```
 
-##  绘制多边形
-```jsx
-import  Demo11  from './demo11';
+## 绘制多边形
 
-export default () => <Demo11  />
+```jsx
+import Demo11 from './demo11';
+
+export default () => <Demo11 />;
 ```
 
 ## 平移
+
 ```jsx
 import Demo12 from './demo12';
 
-export default () => <Demo12 />
+export default () => <Demo12 />;
 ```
 
 ## 旋转
+
 ```jsx
 import Demo13 from './demo13';
 
-export default () => <Demo13 />
+export default () => <Demo13 />;
 ```
 
 ## 纹理
+
 ```jsx
 import Demo14 from './demo14';
 
-export default () => <Demo14 />
+export default () => <Demo14 />;
 ```
 
 ## 打印向量
+
 ```jsx
 import Demo15 from './demo15';
 
-export default () => <Demo15 />
+export default () => <Demo15 />;
 ```
 
-## 4个方块
+## 4 个方块
+
 ```jsx
 import Demo16 from './demo16';
 
-export default () => <Demo16 />
+export default () => <Demo16 />;
 ```
 
+## 结构体
+
+```jsx
+import Demo17 from './demo17';
+
+export default () => <Demo17 />;
+```
