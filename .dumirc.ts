@@ -5,4 +5,7 @@ export default defineConfig({
   themeConfig: {
     name: 'webgl',
   },
+  resolve: {
+    docDirs: ['src', 'docs'],
+  },
 });
