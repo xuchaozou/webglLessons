@@ -112,7 +112,7 @@ const Demo15 = (props) => {
       gl.UNSIGNED_BYTE,
       pixel,
     );
-    // console.log(pixel)
+    console.log(pixel)
   };
 
   useEffect(() => {

@@ -61,8 +61,10 @@ const Demo10 = (props) => {
     // ])
 
     const data = new Float32Array([
-      -0.5, -0.5, 0.0, 0.0, 0.5, -0.5, 2.0, 0.0, -0.5, 0.5, 0.0, 2.0, 0.5, 0.5,
-      2.0, 2.0,
+      -0.5, -0.5, 0.0, 0.0,
+      0.5, -0.5, 2.0, 0.0,
+      -0.5, 0.5, 0.0, 2.0,
+      0.5, 0.5, 2.0, 2.0,
     ]);
 
     const buffer = gl.createBuffer();
@@ -166,7 +168,7 @@ const Demo10 = (props) => {
     // animate()
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   return <Webgl hook={hook} />;
 };

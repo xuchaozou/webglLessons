@@ -14,7 +14,7 @@ const Demo08 = (props) => {
   const hook = ({ gl }) => {
     glRef.current = gl;
 
-    const vertexSource = glsl`
+    const vertexSource = glsl`     
         attribute vec4 a_Position;
         void main() {
             gl_Position = a_Position;
@@ -31,7 +31,7 @@ const Demo08 = (props) => {
     Util.initShader(gl, vertexSource, fragmentSource);
 
     const vertices = new Float32Array([
-      -0.2, 0.1, 0.2, 0.1, 0.2, -0.1, -0.2, -0.1,
+      -0.2, 0.1, 0.2, 0.1,  -0.2, -0.1, 0.2, -0.1
     ]);
 
     const buffer = gl.createBuffer();

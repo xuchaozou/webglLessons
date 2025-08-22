@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Webgl from '../../components/webgl';
+import Util from '../../utils/Util';
 
 function glsl(code) {
   return code;
@@ -53,6 +54,7 @@ const Demo05 = (props) => {
     }
 
     const program = gl.createProgram();
+    gl.program = program;
     gl.attachShader(program, vertextShader);
     gl.attachShader(program, frageShader);
     gl.linkProgram(program);
@@ -69,7 +71,15 @@ const Demo05 = (props) => {
     gl.drawArrays(gl.POINTS, 0, 1);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    glRef.current.canvas.addEventListener('click', (e) => {
+      const gl = glRef.current;
+      const u_FragColor = gl.getUniformLocation(gl.program, 'u_FragColor');
+      gl.uniform4fv(u_FragColor, new Float32Array(Util.getRandomColor()));
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      gl.drawArrays(gl.POINTS, 0, 1);
+    })
+  }, []);
 
   return <Webgl hook={hook} />;
 };

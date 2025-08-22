@@ -68,6 +68,7 @@ const Demo04 = (props) => {
 
   useEffect(() => {
     const linkEvent = (e) => {
+      const gl = glRef.current;
       const { width, height } = gl.canvas.getBoundingClientRect();
       const { offsetX, offsetY } = e;
       const x = (offsetX - width / 2) / (width / 2);

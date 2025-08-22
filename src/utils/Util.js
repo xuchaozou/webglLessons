@@ -90,17 +90,18 @@ const Util = {
         }
     },
     getMousePosInWebgl(event, canvas) {
-        debugger
         const {width , height} = canvas.getBoundingClientRect()
         const {offsetX , offsetY} = event
         const x =  (offsetX - width / 2) / (width / 2)
         const y =  (height / 2 - offsetY) / (height / 2)
         return {x, y}
+    },
+    getRandomColor(a = true) {
+        const r = Math.random()
+        const g = Math.random()
+        const b = Math.random()
+        return [r, g, b, a ? 1.0 :Math.random()]
     }
-
-
-
-
 }
 
 export default Util
